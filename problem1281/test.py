@@ -1,5 +1,5 @@
 import unittest
-from problem1281 import Solution
+from problem1281_2 import Solution
 
 class CheckSolution(unittest.TestCase):
     def setUp(self):
@@ -9,11 +9,10 @@ class CheckSolution(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_normal_00(self):
-        self.assertEqual(0, self.sol.subtractProductAndSum(0))
 
     def test_normal_01(self):
-        self.assertEqual(0, self.sol.subtractProductAndSum(1))
+        for i in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
+            self.assertEqual(0, self.sol.subtractProductAndSum(i))
 
     def test_normal_02(self):
         self.assertEqual(-1, self.sol.subtractProductAndSum(11))
