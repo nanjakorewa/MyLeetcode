@@ -4,6 +4,10 @@
 #         self.val = x
 #         self.next = None
 
+# Runtime: 16 ms, faster than 99.78% of Python3 online submissions for Swap Nodes in Pairs.
+# Memory Usage: 13 MB, less than 96.97% of Python3 online submissions for Swap Nodes in Pairs.
+# Next challenges:
+
 class Solution:
     def swapPairs(self, head: ListNode) -> ListNode:
 
